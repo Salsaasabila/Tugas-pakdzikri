@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Malang</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h3>Wisata Kota Malang</h3>
+      <li><a href="bromo.html">Gunung Bromo</a></li>
+      <li><a href="jatim park.html">Jatim Park</a></li>
+      <li><a href="Alun alun.html">Alun Alun Malang</a></li>
+      <li><a href="kampung rainbow.html">Kampung Warna-Warni Jodipan</a></li>
+      <li><a href="Labirin.html">Taman Labirin Coban Rondo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Gedung Balai Kota Malang</h1>
+    <img src="malang.jpg"alt="image" height="200px" width="300px">
+    <p>Kota Malang adalah sebuah kota yang terletak di provinsi Jawa Timur, Indonesia. Kota ini didirikan pada masa Pemerintahan Belanda pada tanggal 1 April 1914 dengan E.K Broeveldt sebagai wali kota pertama. Kota ini terletak di dataran tinggi seluas 145,28 km² yang merupakan enklave Kabupaten Malang.Bers ama dengan Kota Batu dan Kabupaten Malang, Kota Malang merupakan bagian dari kesatuan wilayah yang dikenal dengan Malang Raya.</p>
+    <p>Malang juga terkenal sebagai kota bunga karena banyaknya bunga yang menghiasi kota. Kota Malang dikenal sebagai kota seni karena banyaknya kesenian khas dari kota ini, mulai dari tarian hingga pertunjukan, seperti Tari Topeng Malang.</p>
+  </article>
+</section>
+
+<footer>
+  <p>@ssalsajw0o</p>
+</footer>
+
+</body>
+</html>
+
